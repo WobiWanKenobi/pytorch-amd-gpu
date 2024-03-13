@@ -2,7 +2,7 @@
 
 # 📖 Introduction
 
-After having some trouble installing and using PyTorch on my AMD GPU I wanted to share the process that worked for me. I am using a Radeon RX 6800 XT.
+After having some trouble installing and using PyTorch on my AMD GPU I wanted to share the process that worked for me. I am using a Radeon RX 6800 XT. But all GPUs with RDNA2 and RDNA3 should work perfectly fine.
 
 # 🔧 How-To
 ## Prequesites
