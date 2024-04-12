@@ -7,9 +7,9 @@ After having some trouble installing and using PyTorch on my AMD GPU I wanted to
 # 🔧 How-To
 ## Prequesites
 
-- Linux Ubuntu 22.04 LTS (v23.10 did NOT work for me)<br>
+- Linux Ubuntu 22.04 LTS (v23.10 did NOT work for me). NOTE: When using multiple operating systems on your comupter I suggest you try to install Linux without a dual boot setup. There are several guides on the Internet on how to do this. The simplest way without messing anything up with your other operating systems, like it is often the case for example with Windows, I recommend you disconnect all your drives (HDD, SSD, M.2, ...) except the formated drive (internal or external) and then plugin your installation usb and install Ubuntu. After the installation is finished you can power off your computer completely and connect your harddrives again. NOTE: To prevent damage on your computer and yourself always make sure to disconnect the powercable completely, when opening your computer ;) <br>
 
-  `` sudo apt update && sudo apt install -y git python3-pip python3-venv python3-dev libstdc++-12-dev ``<br>
+-  `` sudo apt update && sudo apt install -y git python3-pip python3-venv python3-dev libstdc++-12-dev ``<br>
   
 - disable Secure Boot in your BIOS, I had trouble entering MOK keys when trying to install the AMD Drivers
 
