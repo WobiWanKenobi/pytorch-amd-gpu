@@ -58,17 +58,17 @@ try:
     gid = pwd.getpwnam(user).pw_gid
     groups.append(grp.getgrgid(gid).gr_name)
     if 'render' in groups and 'video' in groups:
-        print('GOOD: The user', user, 'is in RENDER and VIDEO groups.')
+        print('GOOD: The user', user, 'is in the RENDER and VIDEO groups.')
     else:
         print('BAD: The user', user,
-              'is NOT in RENDER and VIDEO groups. This is necessary in order to PyTorch use HIP resources')
+              'is NOT in RENDER and VIDEO groups. This is necessary in order for PyTorch to use HIP resources')
 
     if torch.cuda.is_available():
         print("GOOD: PyTorch ROCM support found.")
         t = torch.tensor([5, 5, 5], dtype=torch.int64, device='cuda')
         print('Loading test tensor to GPU: ')
         if str(t) == "tensor([5, 5, 5], device='cuda:0')":
-            print('Everything fine! You can run PyTorch code inside of: ')
+            print('Everything is fine! You can run PyTorch code inside of: ')
             for device in devices:
                 print('---> ', device)
     else:
